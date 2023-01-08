@@ -20,10 +20,10 @@ const HomeContainer = ()=>{
       setPaginationno(data.total_pages);
       console.log('data', data);
   }
+  
   useEffect(()=>{
     console.log('Trending Component did mount');
-    GetDataTrending();
-    
+    GetDataTrending();  
 }, [])
   return(
     <main className='homePage'>

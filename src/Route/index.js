@@ -23,7 +23,7 @@ const RouterComponent = () => {
                     <Route path="/contact" element={<ContactContainer />} />
                     <Route path="/series" element={<SeriesContainer />} />
                     <Route path="/search" element={<SearchContainer />} />
-                    <Route path="/details/:movieid/:/mediatype" element={<DetailsContainer />}/>
+                    <Route path="/details/:movieid/:mediatype" element={<DetailsContainer />}/>
                 </Routes>
                 <FooterContainer />
             </BrowserRouter>
@@ -32,22 +32,5 @@ const RouterComponent = () => {
     )
 }
 export default RouterComponent;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
