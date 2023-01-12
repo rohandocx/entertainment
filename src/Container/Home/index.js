@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import CardMoviesComponents from '../../Components/CardMovies';
-
+import PaginationComponent from '../../Components/Pagination';
 import axios from 'axios';
 
 const HomeContainer = ()=>{
@@ -25,6 +25,14 @@ const HomeContainer = ()=>{
     console.log('Trending Component did mount');
     GetDataTrending();  
 }, [])
+const handleClick = (number)=>{
+  setPageno(number);
+}
+useEffect(()=>{
+  console.log('Trending Component didupdate mount');
+  GetDataTrending();
+  //eslint-disable-next-line
+    }, [pageno])
   return(
     <main className='homePage'>
       <Container>
@@ -37,7 +45,11 @@ const HomeContainer = ()=>{
                         content && content.length > 0 ? content.map((item, index)=>{
                             return (<CardMoviesComponents key={index} data={item} />)
                         }) : 'Loading ....'
+                        
                     }
+                     {
+                    paginationno && paginationno > 1 ? <PaginationComponent maxnum={paginationno} activenum={pageno} handleClick={handleClick}/> : ''
+                }
          </Row>
       </Container>   
     </main>

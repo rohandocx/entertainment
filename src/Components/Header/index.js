@@ -9,7 +9,7 @@ const HeaderContainer = ()=>{
       {name: 'Home',Link :'/'},
       {name: 'Movies',Link :'/movies'},
       {name: 'Tv Series',Link :'/series'},
-      {name: 'Search',Link :'/search'},
+      
       {name: 'Contact Us',Link :'/contact'},
       {name: 'About',Link :'/about'},
       
