@@ -10,7 +10,7 @@ const HeaderContainer = ()=>{
       {name: 'Movies',Link :'/movies'},
       {name: 'Tv Series',Link :'/series'},
       
-      {name: 'Contact Us',Link :'/contact'},
+      {name: 'Contact Me',Link :'/contact'},
       {name: 'About',Link :'/about'},
       
    ]
