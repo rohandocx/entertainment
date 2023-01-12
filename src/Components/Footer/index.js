@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './style.css';
 
-import { BsFacebook, BsLinkedin, BsTwitter, BsStackOverflow, BsGoogle, BsGithub, BsYoutube } from "react-icons/bs";
+import { BsFacebook,BsInstagram, BsLinkedin, BsTwitter, BsStackOverflow, BsGoogle, BsGithub, BsYoutube } from "react-icons/bs";
 const FooterComponent = ()=>{
     
     return (
@@ -13,12 +13,22 @@ const FooterComponent = ()=>{
                 <Container>
                    <Row>
                         <Col className=''>
-                            <h3 className='head_3'>Follow us :- </h3>
+                            
                             <ul className='socialIconsList'>
                                 
                                 <li>
                                     <a rel="noreferrer" href="https://www.linkedin.com/in/rohan-singh-b20aa71b8/" target="_blank">
                                         <BsLinkedin />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="noreferrer" href="https://www.instagram.com/rohan_singh724/" target="_blank">
+                                        <BsInstagram />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="noreferrer" href="https://twitter.com/RohanSi01063908" target="_blank">
+                                        <BsTwitter />
                                     </a>
                                 </li>
                                            
@@ -33,7 +43,7 @@ const FooterComponent = ()=>{
                         </Col>
                         <Col className='col-12'>
                             <div className="footerCopyright">
-                                <small>©Developed & designed by Rohan Singh  <a href="https://www.youtube.com/c/AzadMalikRohit" target="_blank" rel="noreferrer">Rohit Azad Malik (R.A.M)</a>.</small>
+                                <small>©Developed & designed by Rohan Singh  </small>
                             </div>
                         </Col>
                    </Row>

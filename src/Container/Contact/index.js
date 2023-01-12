@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { BsFacebook, BsLinkedin, BsTwitter, BsStackOverflow, BsGoogle, BsGithub, BsYoutube } from "react-icons/bs";
+import { BsFacebook,BsInstagram, BsLinkedin, BsTwitter, BsStackOverflow, BsGoogle, BsGithub, BsYoutube } from "react-icons/bs";
 import '../Contact/style.css';
 
 const  ContactContainer = ()=>{
@@ -32,7 +32,16 @@ const  ContactContainer = ()=>{
                                 <BsLinkedin />
                             </a>
                         </li>
-                        
+                        <li>
+                            <a rel="noreferrer" href="https://www.instagram.com/rohan_singh724/" target="_blank">
+                                <BsInstagram />
+                            </a>
+                        </li>
+                        <li>
+                                    <a rel="noreferrer" href="https://twitter.com/RohanSi01063908" target="_blank">
+                                        <BsTwitter />
+                                    </a>
+                                </li>
                         
                         
                         <li>
